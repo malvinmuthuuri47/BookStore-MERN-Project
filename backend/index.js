@@ -15,13 +15,13 @@ app.use(express.json())
 // Option 1: Allows all Origins with default of cors(*)
 // app.use(cors())
 // Option 2: Allows Custom Origins
-app.use(
-    cors({
-        origin: <Your CORS address>,
-        methods: ['Accepted methods by the server'],
-        allowedHeaders: ['Content-Type']
-    })
-)
+// app.use(
+//     cors({
+//         origin: <Your CORS address>,
+//         methods: ['Accepted methods by the server'],
+//         allowedHeaders: ['Content-Type']
+//     })
+// )
 
 // Middleware for routes
 app.use('/books', booksRoute)
