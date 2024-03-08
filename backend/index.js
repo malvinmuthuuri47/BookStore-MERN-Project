@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 const cors = require('cors')
 const Book = require('./models/bookModel.js')
 const booksRoute = require('./routes/booksRoute.js')
-// import { PORT } from "./config.js"
+
 require('dotenv').config()
 
 const app = express()
@@ -17,8 +17,8 @@ app.use(express.json())
 // Option 2: Allows Custom Origins
 app.use(
     cors({
-        origin: 'http://localhost:5173',
-        methods: ['GET', 'POST', 'PUT', 'DELETE'],
+        origin: <Your CORS address>,
+        methods: ['Accepted methods by the server'],
         allowedHeaders: ['Content-Type']
     })
 )
